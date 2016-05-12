@@ -1,0 +1,2 @@
+java -cp weka.jar weka.filters.unsupervised.attribute.StringToWordVector -b -i /home/aslihan/Desktop/a/dataposneg.arff -o /home/aslihan/Desktop/a/train.arff -r /home/aslihan/Desktop/a/test.arff -s /home/aslihan/Desktop/a/test1.arff 
+

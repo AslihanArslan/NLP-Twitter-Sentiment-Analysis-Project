@@ -4,7 +4,7 @@
 The aim of this project is to determine feelings of people about Muğla University. For a language i choose Turkish. 
 
 ## Project Steps 
-1. Fetch data 
+1. Fetch data :white_check_mark:
 2. Data processing(cleaning data) 
 3. Classifying tweets like positive and negative. 
 4. Testing 

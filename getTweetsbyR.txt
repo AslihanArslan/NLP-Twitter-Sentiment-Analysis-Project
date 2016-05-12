@@ -1,0 +1,3 @@
+tweets <- searchTwitter("msku", n=200, geocode='37.165607, 28.37281, 15mi')
+tweets_text <- sapply(tweets, function(x)<$getText())
+write.csv(tweers_text, file="mugla.csv", row.names=FALSE)

@@ -1,0 +1,2 @@
+userTweets <- userTimeline("MuglaUniversity", n=500)
+userTweets

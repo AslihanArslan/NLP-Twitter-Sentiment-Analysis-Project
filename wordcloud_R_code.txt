@@ -1,0 +1,31 @@
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+
+text=readLines(file.choose())
+docs=Corpus(VectorSource(text))
+
+toSpace=content_transformer(function (x,pattern) gsub(pattern," ",x))
+docs=tm_map(docs,toSpace,"/")
+docs=tm_map(docs,toSpace,"@")
+docs=tm_map(docs,toSpace,"\\|")
+
+docs=tm_map(docs,content_transformer(tolower))
+docs=tm_map(docs,removeNumbers)
+docs=tm_map(docs,removeWords,stopwords("english"))
+
+docs=tm_map(docs,removeWords,c("muğla", "muğla üniversitesi","sıtkı koçman", "positive", "negative", "üniversite", "msku", "üniversitesi", "bir", "olsun" ))
+docs=tm_map(docs,removePunctuation)
+docs=tm_map(docs,stripWhitespace)
+
+dtn=TermDocumentMatrix(docs)
+n=as.matrix(dtn)
+v=sort(rowSums(n),decreasing = TRUE)
+d=data.frame(word=names(v),freq=v)
+head(d,10)
+set.seed(1234)
+wordcloud(words = d$word,freq = d$freq,min.freq = 1,max.words = 500,
+          random.order = FALSE,rot.per = 0.15,
+          colors = brewer.pal(8,"Dark2"))
+

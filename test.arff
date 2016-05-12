@@ -1,0 +1,20 @@
+@relation sentimentAnalysis
+
+@attribute tweets string
+@attribute sentiment{positive, negative}
+
+
+@data
+ 'en güvenilmez il seçilen muğla tüİke dava açtı',?
+ 'erken yaş müzik eğitiminde suzuki ana dil metodu',?
+ 'evet ruh hastaları başlamış yine univercity değil university olacak diye bir tek ingilizce bilen sizsiniz değil mi',?
+ 'ev sahipleri kendi aralarında anlaşmalı olarak zam yapıyorlar',?
+ 'Ev kiraları çok pahalı',?
+ 'Muğla pişmanlıktır',?
+ 'günaydın bilginin sevgiyle bütünleştiği çılgın üniversite günaydın',?
+ 'günaydın sınav stresi olmayan güzel bir gün olması dileğiyle hayırlı cumalar',?
+ 'Bugün hava çok güzel',?
+ 'Yaz okulu hem de Muğlada ise tatil demek',?
+ 'hayata renk kat muğla sıtkı koçman üniversitesi',?
+ 'Bahar gelmiş hoşgelmiş',?
+

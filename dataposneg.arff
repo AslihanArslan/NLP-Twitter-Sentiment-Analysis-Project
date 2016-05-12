@@ -1,0 +1,641 @@
+@relation sentimentAnalysis
+
+@attribute tweets string
+@attribute sentiment{positive, negative}
+
+
+@data
+ '17 ağustos depreminde hayatını kaybeden vatandaşlarımızı rahmetle anıyoruz',negative
+ '20142015 eğitimöğretim yılının güz döneminde tüm öğrencilerimize yağmurluk hediye edeceğiz',positive
+ '20162017 eğitimöğretim yılı farabi değişim programı başvuruları',positive
+ '2016 2017 erasmus programı öğrenci öğrenim hareketliliği başvuruları',positive
+ '20 ocak 1989 kırmızı beyaza siyahın eklendiği bu tarihte samsunsporumuzun futbol şehitlerini saygıyla anıyoruz',negative
+ '21 sayı muğla sıtkı koçman üniversitesi',positive
+ '22 aralık 1914de sarıkamışta şehit olan 60 bin türk askerini saygıyla anıyoruz',positive
+ '29 ekim cumhuriyet bayramı kutlu olsun',positive
+ '29 mayıs 1453 İstanbulun fethinin 561 yıldönümü kutlu olsun',positive
+ '2lig futsal maçları muğla üniversitesi eski besyo spor salonu',positive
+ '2 nisan otizm farkındalık gününde otizmli çocuklara ve ailelere destek için',positive
+ '2 vesikalık fotoğraf ile birlikte muharlıktan ikametgah belgeni alıp m kapı güvenliğine başvuruyorsun',positive
+ '2 yıl önce bugün hayata gözlerini yuman ediz bahtiyaroğlunu saygıyla anıyoruz',positive
+ '58 şiddetinde hissedenler',negative
+ '7 mart pazartesi akşamı hepinizi sokak hayvanları için'positive
+ '%7si en son kütüphanede uyurken görüntülendi',negative
+ '8 uluslararası doğu akdeniz jeolojisi sempozyumu',positive
+ 'abone olduk muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',negative
+ 'aklı başında olan ve iq seviyesi normal olan her insan bu tweetin espri amacıyla yazıldığını farketmiştir',negative
+ 'akşama bekleme yâr cimbomun maçı var aksiyon macera ve adrenalin dolu finaller yarın kaldığı yerden devam ediyor',positive
+ 'akşam aksam ne vakası bu ya muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',negative
+ 'allah dualarımızı kabul etsin hayırlı cumalar',positive
+ 'allah katında ders yapıyolar abi bu ne 8 kat da ders mi olur abv msku',negative
+ 'allah yardımcımız olsun',negative
+ 'alttan aldığın derse girince tanıdık birini görmektir mutluluk',positive
+ 'altta yazıyor zaten adam haklı beyler',positive
+ 'an itibariyle birinci sınıf öğrencilerimiz'positive
+ 'annenle oturup karşılıklı çay içebiliyorsan eğer şükretmek için çok sebebin var demektir kutlu olsun',positive
+ 'aq yeri muğla sıtkı koçman üniversitesi köyceğiz meslek yüksekokulu in muğla köyceğiz',negative
+ 'arada bir sosyal medyada ülke gündeminde olacağız hazırlıklı olun',positive
+ 'aramıza bir jammer girmemeli',negative
+ 'araş gör hilal küçük İçin lokma dökülecektir',positive
+ 'arkadaşlar bütlerin etkisiyle otogardaki ikna uzmanı adamlara uyup yanlış bir şehire gitmeyin lütfen kendi memleketinize gidin',negative
+ 'arkadaşlarımız göktepe köyü İlköğretim okuluna kütüphane oluşturmak için eğitim fakültesinde kermes düzenliyor',positive
+ 'arkadaşlar kampüste şenlik alanında çok fazla sayıda kene görüldü lütfen dikkatli olun',negative
+ 'arkadaşlar siz öğrencisiniz tavuğa da girebilirsiniz kötekli de fazlasıyla var',positive
+ 'arkadaşlar sorularınızı facebooktan yazarsanız daha iyi olur burda bildirimlerin arasında kayboluyor',negative
+ 'armoni solfej öğrenim metodolojisi',positive
+ 'atm kullanımı okullarda zorunlu ders olmalı',positive
+ 'aydın gelsin bizde 45 yıl besyo okusun şampiyonlar ligi için sonra düşünürsünüz vizeleri erken yapsak kalmayacak mısınız',negative
+ 'aynen belkide namık hoca benimdir',positive
+ 'ayrıca kampüsümüzde ayda bir köpük partisi düzenliyoruz',positive
+ 'baba yaslandığın dağdır tüm gerçek babaların günü kutlu olsun',positive
+ 'bahar döneminin başlamasıyla vize haftası arasında geçen zamanın hızına ışık hızı denir',negative
+ 'bahar şenliklerimizin konser programına arsız belayı dahil etmek için girişimlerimiz sürüyor',positive
+ 'bahar şenliklerimizin konser programına asi stylayı dahil etmek için girişimlerimiz sürüyor sürprizlere hazır olun',positive
+ 'bak bak nasıl seviliyorum sen ancak trip at hayır'negative
+ 'balkanlardan gelen soğuk hava dalgası önce muğlaya uğruyor',negative
+ 'başımız sağolsun',negative
+ 'başımız sağolsun bütün dualarımız sizinle allah yardımcınız olsun',negative
+ 'batıyoruz galiba',negative
+ 'bayan futsal maçı muğla üniversitesi eski besyo spor salonu'positive
+ 'bayram günü küslük olmaz geri dön nolur evet o başkası yüzünden bırakıp gitti beni bu belediyeden sonra muğladaki ev sahipleride öğrencileri öpmeye hazırlanıyor şu sözde 21 olan evlerin kirası 550 tl den 700 tlye çıktı',negative
+ 'bebişkotolostikoparemin maçı var muğla üniversitesi spor salonu in muğla',positive
+ 'beklemedeyiz',positive
+ 'ben belediye başkanı olsaydım bugün sular kesilmezdi',positive
+ 'ben bu sınav programına sövmekten bıktım onlar bir güne 3 sınav koymaktan bıkmadı yeter msku ömrümü çürüttün'negative
+ 'bende kazandığımda da yoktuuu',negative
+ 'beni yak kendini yak finalleri yak',negative
+ 'beni yak kendini yak İİbfyi yak',negative
+ 'ben sana pul koleksiyonumu göstermiş miydim',positive
+ 'berat kandiliniz mübarek olsun',positive
+ 'İnsanlığa dostluk huzur barış ayrıca hocalarımıza ve ev sahiplerine vicdan getirsin',positive
+ 'beyaz futbol ekibini üniversitemizde misafir etmek istiyoruz ne dersiniz bilenler bilmeyenlere söylesin',positive
+ 'bi daa olmasın',negative
+ 'bilgininin sevgiyle bütünleştiği bilge üniversitenin kıymetli öğrencileri ders kayıtları 0812 eylül tarihlerinde yapılacaktır unutmayın',positive
+ 'bilginin kar tatili ile bütünleşemediği bilge üniversite',negative
+ 'bilginin sevgiyle bütünleştiği bilge üniversiteyi seçerek muhteşem bir tercih yaptınız tüm öğrencilerimizi tebrik ederiz',positive
+ 'bilginin sevgiyle bütünleştiği çılgın üniversite',positive
+ 'bilginin yokuşla bütünleştiği sportif üniversite msku',negative
+ 'biliyorum beni buralarda gormeye aliskin degilsiniz muğla üniversitesi turizm fakültesi in muğla',positive
+ 'bırakın dersleri toplanın tarikat kuruyoruz',negative
+ 'bir daha ki survivor ı köteklide düzenleyin daha az masrafla daha zorlu daha heyecanlı bir yarışma olur yarışmacılarda bizden bir de bilginin sevgiyle bütünleştiği bilge üniversitenin öğrencileri olacaksınız',positive
+ 'bir dediğinle bir dedigin tutsun yani',negative
+ 'birileri muğladaki esnaf ve ev sahiplerine öğrenciler olmadan muğlanın bir hiç olduğunu anlatmalı',negative
+ 'birinci sınıflar plan yapar dördüncü sınıflar güler',negative
+ 'bir kâbus çeşidi olarak finaller',negative
+ 'bir kız öğrencimiz yıllık ilişkim bitti herkesten nefret ediyorum diye tweet atmış bölümünü 4 yıllık yapmak için çalışmalara başladık',negative
+ 'bir miktar para  holosko dışında tüm tekliflere açığız',positive
+ 'bir msku değiller bir öğrenci atasözü der ki bu öğrendiklerimiz gerçek hayatta ne işimize yarayacak',negative
+ 'bir öğrenci atasözü der ki çalış çalış nereye kadar',negative
+ 'bir şehir ol mesela muğla gibi de ki öğrencileri sömürmem bitinceye kadar seveceğim seni',negative
+ 'bir siyasi parti de biz kuralım bizim neyimiz eksik ögrencinin yokuş partisiöyp',negative
+ 'bir tarafta öğrencileri bırakmaya yeminli onlarca hoca diğer tarafta bunalımda olan binlerce öğrenci cehennemin fragmanı vizeler başlıyor',negative
+ 'bir üniversiteli atasözü der ki kanka benim yerime de imza atsana',negative
+ 'bir üniversite ne kadar hayattan soğutabilir diye düşündüler ve bizim üniversiteyi yaptılar',negative
+ 'bir zamanlar ben varken bunların hiçbiri yoktu',negative
+ 'bitsin artık bu çile muğla sıtkı koçman üniversitesi in menteşe türkiye',negative
+ 'bizde bilirdik kampüsten kötekliye feribot seferleri koymasını lakin açtık yedik harç paralarını',negative
+ 'biz de bilirdik sevgiliye karanfil almasını lakin aç idik iddaaya yatırdık karanfil parasını msku öğrencileri',negative
+ 'bizde çok sakat var',negative
+ 'bize hergün tatil',positive
+ 'bizim antrenörlük öğrencileri prandelliden daha çok iş yapar',positive
+ 'bizim basketbol takımları sizin orda iyi ağırlayın bir yanlış olmasın bizim çocuklar sana yenge demek istiyor bizim iibflilerin 3 dilek hakkı olsa hepsiyle fakültenin havaya uçurulmasını isterler öyle bir nefret',negative
+ 'bizimkiler cennete geldikleri için çok mutlular',positive
+ 'bizim kızlar sizin kızları döver',negative
+ 'bizim pc lere format atılması gerekiyor birkaç bilgisayar mühendisi gönderirmisin bizim çocuklar yine akyakaya gitmişte bizim pc lerin format zamanı gelmiş birkaç bilgisayar mühendisi gönderirmisin bizim çocuklar ders çalışıyor',negative
+ 'bizim üniversitemizde overlok makinesi değil deniz gelir ayağınıza',positive
+ 'bizim yokuşlar genel olarak 485° açıya sahip komşu',negative
+ 'biz o merdivenleri siz fotoğraf çekilesiniz diye boyadık çıkmanız için değil kendinize gelin',negative
+ 'biz size mezun olmayın demiştik neyse geçmiş olsun',negative
+ 'biz sizin bildiğiniz üniversitelerden değiliz',negative
+ 'biz sizin bildiğiniz üniversitelerden değiliz survivor kötekliye hazır olun',negative
+ 'biz uyarmıştık',negative
+ 'bodrumda 12 saat kesintisiz yağan yağmur sonucu',negative
+ 'bodrumda sel felaketi var acil yardım lazım',negative
+ 'bodrum son yılların en büyük sel felaketini yaşıyor',negative
+ 'bu akşam bir hashtag başlatalım mı',positive
+ 'bu akşam heycan devam ediyor 2000 da kaçırmayınn 2000 da kaçırmayınn',positive
+ 'bu aralar köteklide yapılabilecek en iyi şey 7 kişi birleşip danaya girmek kurban bayramı da yaklaşıyor',positive
+ 'bu gece takip gecesi olsun dmden saçma sorular sormadan yazabilirsiniz',positive
+ 'bugün hakkari yüksekovada şehit edilen mehmetçiklerimize allahtan rahmet ailelerine ve sevenlerine başsağlığı ve sabır diliyoruz',negative
+ 'bu İİbfden mezun olabilen öğrencilerimiz lokma dağıtıp kurban kessin',negative
+ 'bu kadar büyük bir kampüste bir tane ambulans yok',negative
+ 'bu kapının önünde fotoğraf çekilmeyenleri üniversitemize almıyoruz',negative
+ 'bu mübarek gecede muğla sıtkı koçman üniversitesini kazandığınız için şükredin zîra iğdır üniversitesini de kazanabilirdiniz',positive
+ 'bunlar daha iyi günleriniz',positive
+ 'bu ödevi istediğim gibi yaptığım an mezun edebilirsiniz beni okuldan ben olmuşumdur zaten',negative
+ 'burası kötekli burda herşey gerçek',positive
+ 'burası msku burda herşey gerçek makro İktisat ii sınav sonuçları aa &gt 2 ff &gt 251',negative
+ 'burası muğla burda herşey gerçek',positive
+ 'bu saatte mesaj geldi diye heyecanlandız tabi acaba o mu attı diye ama o değil biz attık bizden başka kimseniz yok',negative
+ 'bu saatte okula geliyorum eğer müh olamazsam tehlikeli işler yapar msku küfrederim',negative
+ 'business management yazmış kardeşim sonuç olarak köteklide işletme okuyorsun bio çok iddialı değilmi',negative
+ 'büte kalan msku öğrencisi',negative
+ 'bütünlemeler sizi çağırıyor',negative
+ 'bütünleme sınavlarında görüşmek üzere',negative
+ 'bütün sıkıntıların tek çözümü var muğlayı ateşe vermek',negative
+ 'bu tweeti ciddiye alan arkadaşlar yarın öğrenci işlerine uğrayıp diplomasını alsın lütfen daha fazla birbirimizi üzmeyelim',negative
+ 'bu üniversite bu kadar bedduayı nasıl kaldırıyor',negative
+ 'bu yıl işler kesat üniversiteyi satılığa çıkarmayı düşünüyoruz',negative
+ 'bu yıl üniversitemizde yaz okulunun tekrar açılma durumu var görüşmeler devam ediyor açılıpaçılmayacağı nisan ayında kesinleşecek',positive
+ 'çakar cafe house',positive
+ 'cankurtaranlık muğla üniversitesi yüzme havuzu',positive
+ 'canli mugla msku öğrenci evi lol zamani',positive
+ 'cep telefonlarınızı hazırlayın bugün günlerden kötekli cehennemi',negative
+ 'ceylanpınar İlçesi sınırında 3 askerimiz şehit olmuştur şehitlerimize allahtan rahmet ailelerine baş sağlığı ve sabır diliyoruz',negative
+ 'çılgın hocalar anlamsız dersler ölüm yokuşları ve yüzlerce çaresiz öğrenci cehennemin fragmanı msku yaz okulunda',negative
+ 'çocukların ölmediği çocuk gelinlerin sonunun geldiği ve çocuk işçilerin artık okula gittiği bir dünya umuduyla kutlu olsun',positive
+ 'çok büyük ipucu yakalamışsın bu ipucu tüm dengeleri üst eder',positive
+ 'çok sıkıldım hesabın şifresini tweet olarak atıp ceketimi alıp gitmeyi düşünüyorum yada hesabı tamamen kapatmayı',negative
+ 'çünkü lanet olası bir zorunluluğu var muğla sıtkı koçman üniversitesi köyceğiz meslek yüksekokulu',negative
+ 'daha açıklanmadımı sınavların yok baba açıklanmadı hiçbiri nasıl bir üniversite bu yahu hocalar çok rahat ya neyse annemler nasıllar',negative
+ 'değerli sanatçı zeki alasyaya allahtan rahmet ailesine ve tüm sevenlerine sabır diliyoruz',negative
+ 'değerli sinema ve tiyatro sanatçımız sümer tilmaça allahtan rahmet ailesine sevenlerine başsağlığı dileriz',negative
+ 'ders arası maç izlenir muğla üniversitesi spor salonu in muğla',positive
+ 'ders çalışırken bi su içip gelmek en az 3 saat sürüyor',negative
+ 'ders çalışmalıyım nasıl ders çalışırız derse nasıl çalışırız çalışamamak kapanış',negative
+ 'ders kayıtlarımız da başladığına göre artık tatil moduna girebilirsiniz',positive
+ 'dersleri geçebileceğini düşünüyomusun diye sorduklarında msku öğrencisi  temsili falan değil ',negative
+ 'diğer sosyal medya hesaplarımız facebook instagram',positive
+ 'diğer üniversiteler yıldız ise msku gökyüzü',negative
+ 'diğer üniversitelilerin fotolarını görüp sizde besyodan yurtlara kadar kaymak istediniz değil mi İşte yok öyle bir dünya yatın uyuyun',negative
+ 'diplomalı işsiz olmak için 4 yıl üniversite okumak eşittir 1 gün ölmek için her gün yaşamak',negative
+ 'doğum günün kutlu olsun  dönem sonunda bütlere kalacak msku öğrencisi temsili falan değil ',negative
+ 'doğumunun 170 yılında abay kunanbayev',positive
+ 'dönemin ilk stajı muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',positive
+ 'do you wanna come to our spring festival havalar güzel sizide bekleriz',positive
+ 'dünyada her şeye kıymet biçilebilir ama öğretmenin eserine kıymet biçilemez socrates 24 kasım öğretmenler günü kutlu olsun',positive
+ 'dünyada her şeye kıymet biçilebilir ama öğretmenin eserine kıymet biçilemez socrates kutlu olsun',positive
+ 'dünyanın en kısa fıkrası mskunun kusursuz bir öğrenci bilgi sistemi var',negative
+ 'durmadan yükselen dolar birçok öğrencimizin not ortalamasını geride bıraktı',negative
+ 'duydum ki unutmuşsun m kapımın rengini duyuru üniversitemizin bahar şenlikleri programı iptal edilmiştir',negative
+ 'duygu, hacer büşra İrem muğla üniversitesi turizm fakültesi in muğla',positive
+ 'düzeltme merkez üssü yeniköymüş bizim buralar yani',positive
+ 'efeler ve mehterler',positive
+ 'eğitim sistemi',positive
+ 'egosunu tatmin edememiş hocalar 2',negative
+ 'egosunu tatmin etmek için pusuya yatmış hocalar saldırı için bekleyen fotokopiciler ve çaresiz öğrenciler vizeler çok yakında mskuda',negative
+ 'ekime kadar gelmeyenleri saygıyla anıyoruz',negative
+ 'ekmeğimizin pesindeyiz muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',positive
+ 'ek tercihlerde üniversitemize yerleşen arkadaşlar hayırlı olsun bilginin sevgiyle bütünleştiği bilge üniversitemize hoş geldiniz',positive
+ 'elektriğin icadında emeği geçen herkesi saygıyla anıyoruz',positive
+ 'elektrikler 1 saat içinde gelmezse yarınki finallerin düşmesi lazım',negative
+ 'eminim siz de üşümüşsünüzdür ama bizim şu iibf komple gitti',negative
+ 'en azından İİbfnin uzaktan kumandalı bomba ile havaya uçurulma ihtimali yok',positive
+ 'en birinci kankam muğla sıtkı koçman üniversitesi iktisadi ve İdari bilimler',positive
+ 'en buruk 19 mayıs bayramı kutlu olsun allah ülkemize başka acı vermesin',positive
+ 'en büyük engel engellenmektir muğla sıtkı koçman üniversitesi',negative
+ 'engel tanimayanlarin kutlu olsun',positive
+ 'en güvenilmez il seçilen muğla tüİke dava açtı',negative
+ 'erken yaş müzik eğitiminde suzuki ana dil metodu',positive
+ 'evet ruh hastaları başlamış yine univercity değil university olacak diye bir tek ingilizce bilen sizsiniz değil mi',negative
+ 'ev sahipleri kendi aralarında anlaşmalı olarak zam yapıyorlar',negative
+ 'eyvallah',positive
+ 'eyvallahh d',positive
+ 'eyvallah kardeşim',positive
+ 'facebook adresimiz',positive
+ 'facebook sayfamız',positive
+ 'fakültesinde sinyal kesici jammer olmayan üniversiteler burda bize şekil şukul yapmasınlar',positive
+ 'farkındayım ekonomiden zarar gelmez değil mi',negative
+ 'festivale başvurular bu link üzerinden yapılacaktır yakında',positive
+ 'film gösterimi | ötekİ | 11 nisan pazartesi saat 1900da,'positive
+ 'final haftası mode on',positive
+ 'finallerde hocalarımız geçirecek merak etmeyin',positive
+ 'finallere de az kaldı bitmek bilmeyen dersler saçma sapan konular hatırlatayım dedim neyse günaydın',negative
+ 'finaller gelince istesenizde uyuyamayacaksınız uyutmayacağız',negative
+ 'finaller gibi girecek',negative
+ 'finallerimizin stresine birde ev sahiplerinin kiraya zam yapma baskısı eklenince tadından yenmiyor',negative
+ 'finaller öncesi öğrencilerimizin ruh hali',positive
+ 'finaller sayesinde öğrencilerimizin literatüre yeni küfürler eklemesinin haklı gururunu yaşıyoruz',negative
+ 'finaller yaklaşıyor',negative
+ 'final msku öğrencisi',negative
+ 'final sonuçları açıklanırken msku öğrencisi',negative
+ 'flüt resitali',positive
+ 'gece acımasızca fısıldıyor büt',negative
+ 'geçmiş olsun',positive
+ 'gelmiyo aklıma bişey muğla sıtkı koçman üniversitesi',negative
+ 'gelsenizde kalacaksınız gelmezsenizde yine de siz bilirsiniz',negative
+ 'gerçekten saydın mı',positive
+ 'geri dön yoksa yakarım bu kampüsü daha özgün olabilirsin',negative
+ 'günaydın',positive
+ 'günaydın bedenleri kampüste olup ruhları yatakta olan yağmura karşı savaş veren emekçiçılgın öğrenciler',negative
+ 'günaydın bilginin sevgiyle bütünleştiği bilge üniversitenin öğrencileri',positive
+ 'günaydın bilginin sevgiyle bütünleştiği çılgın üniversite günaydın',positive
+ 'günaydın bu saatte bile zor uyanan bilge öğrenciler',negative
+ 'günaydın finaller sizi bekler',negative
+ 'günaydın finaller sizi çağırıyor',negative
+ 'günaydın hafta sonuna selam vizelere devam',negative
+ 'günaydın kahvaltım hazır mı günaydınlar',positive
+ 'günaydınlaarrr muğla üniversitesi spor salonu in muğla',positive
+ 'günaydın msku',positive
+ 'günaydın msku 19 mayıs gençlik ve spor bayramı kutlu olsun',positive
+ 'günaydınn',positive
+ 'günaydın öğrencileri bilimden soğutan çılgın bilim yuvasının efsane öğrencileri günaydın',negative
+ 'günaydın ruhunu yaz okuluna teslim edenler günaydın',negative
+ 'günaydın sıkıysa gelmeyin',negative
+ 'günaydın sınav stresi olmayan güzel bir gün olması dileğiyle hayırlı cumalar',positive
+ 'güneş gözlüğü ve plaj terliğinizin yenisini alabilirsiniz',positive
+ 'güzel bir kahvaltı mı yapsak hafta sonuna sınav koyan kaç üniversite kaldı ki değerimizi bilin',positive
+ 'hadi uyuyun artık',positive
+ 'hala uyku mod muğla üniversitesi turizm fakültesi in muğla',negative
+ 'hangimiz ff almadık çılgınlar gibi',negative
+ 'hanqing güneş camp aytekin chen hahahha muğla sıtkı koçman üniversitesi turizm fakültesi',positive
+ 'harvard bize tatile gelecekmiş havalar isınıyor öğrenci işlerimizden havlu',positive
+ 'harvardı çağırın kutlama yapacağız',positive
+ 'harvard üniversitesinin inşaatında bizden mezun olan inşaat mühendisleri vardı',positive
+ 'hashtagına yazıyoruz',positive
+ 'havuz başı partisine hazır mısınız',positive
+ 'hayaller m kapı gerçekler b ve c',negative
+ 'hayaller venedik gerçekler kötekli',negative
+ 'hayata renk kat muğla sıtkı koçman üniversitesi',positive
+ 'hayat kısa bütler öpüyor',negative
+ 'hayat kısa finallerimiz girecek',negative
+ 'hayat kısa vizelerimiz girecek',negative
+ 'hayat kısa vizeler yakın',negative
+ 'haydi msku hashtagına destek',positive
+ 'hazır eliniz değmişken bizim üniversiteyide kapatın',negative
+ 'hazırlıklara başladınız mı çılgın bir üniversite hayatı sizi bekliyor',positive
+ 'hazır mısınız 7 eylülde hasret bitiyor',positive
+ 'hepsi gerçek',positive
+ 'her insan bir engelli adayıdır muğla',negative
+ 'herkesin final notları kimseyi ilgilendirmez',negative
+ 'herkesin insanlıktan çıktığı bilginin çıkarla bütünleştiği lanetli üniversite',negative
+ 'herkesin yüreğine dokunabilmiş bir efsaneyi kaybettik mekanın cennet olsun nur içinde yat',negative
+ 'herkes yerini alsın',positive
+ 'her tabakla eğitime can verin',positive
+ 'hiç okula tırmanmamış gibi kötüsünüz',negative
+ 'hocalarımızdan size kabaran birşey var vizeler',negative
+ 'hocalarımızın derste işledikleri 22eşittir4 sınavda sordukları bu atomu parçala',negative
+ 'hocam bir ara rok ile birlikte üniversitemize gelir misiniz bir nedeni yok öylesine yani maksat muhabbet hocam nişantaşı üniversitesi adam   mıdır hocam ülkede elektrikler kesikti çalışamadım vize haftası bütün öğrenciler',negative
+ 'hüdaverdi was here',positive
+ 'İddaa da favori takımların oranları üniversitemiz öğrencilerinin genel not ortalamalarından daha yüksek',negative
+ 'İİbf bütünleme sinav programi',positive
+ 'İibf kolay yeaa diyen arkadaşlarınızı kampüs merdivenlerinin en tepesinden aşağı yuvarlayın',negative
+ 'İİbfliler mezun olmayı unutsun yok öyle bir dünya',negative
+ 'İibf yönetimi öğrencilerin telefon ile kopya çekmesini engellemek amacıyla fakülteye sinyal kesici jammer koydu',negative
+ 'İki hafta sürse de hayattan en az 5 yıl çalan yeni küfürlerin üretildiği kahveyle bütünleşen finallerimiz çok yakında vizyonda',negative
+ 'İleri görüşlülük eşittir memlekete dönüş biletini bütlerden sonraya alan msku öğrencisi',negative
+ 'im at msku sivil havacılık in muğla',positive
+ 'im at muğla sıtkı koçman üniversitesi dalaman myo',positive
+ 'im at muğla sıtkı koçman üniversitesi dans salonu',positive
+ 'im at muğla sıtkı koçman üniversitesi datça kazım yılmaz myo in datça',positive
+ 'im at muğla sıtkı koçman üniversitesi İktisadi ve İdari bilimler fakültesi',positive
+ 'im at muğla sıtkı koçman üniversitesi in menteşe türkiye',positive
+ 'im at muğla sıtkı kocman üniversitesi in mugla',positive
+ 'im at muğla sıtkı kocman üniversitesi konuk evi',positive
+ 'im at muğla sıtkı koçman üniversitesi masaj salonu',positive
+ 'im at muğla sıtkı koçman üniversitesi mühendislik fakültesi',positive
+ 'im at muğla sıtkı koçman üniversitesi sağlık kültür ve spor dairesi',positive
+ 'im at muğla sıtkı koçman üniversitesi yabancı diller yüksek okulu',positive
+ 'im at muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',positive
+ 'im at muğla üniversitesi enformatik binası in muğla türkiye',positive
+ 'im at muğla üniversitesi eski besyo spor salonu',positive
+ 'im at muğla üniversitesi futbol sahası in muğla',positive
+ 'im at muğla üniversitesi İİbf kantin',positive
+ 'im at muğla üniversitesi myo şahidi salonu',positive
+ 'im at muğla üniversitesi nazar pasta evi in muğla',positive
+ 'im at muğla üniversitesi sağlık bilimleri fakültesi in muğla',positive
+ 'im at muğla üniversitesi spor salonu in muğla',positive
+ 'im at muğla üniversitesi tenis kortları in muğla türkiye',positive
+ 'im at muğla üniversitesi tıp fakültesi in muğla merkez',positive
+ 'im at muğla üniversitesi turizm fakültesi in muğla',positive
+ 'im at muğla üniversitesi uygulama kliniği in muğla',positive
+ 'im at muğla üniversitesi yüzme havuzu',positive
+ 'İnsanlık dışı ev kiralarını protesto ediyoruz etkinliğini destekliyoruz duyarsız kalma',negative
+ 'instagram hesabımız',positive
+ 'İntihar haramdı öğrencilerimizde msku yazdı',negative
+ 'İroşa destek muğla üniversitesi spor salonu in muğla',positive
+ 'İşçi öğrencilerimiz başta olmak üzere tüm emekçilerin bayramı kutlu olsun',positive
+ 'işıklar saçan bir dostluk koteklide zaman',positive
+ 'İşkur’dan gönderilerek muğla sıtkı koçman üniversitesi’nde işe',positive
+ 'İşsiz işsiz itiraf sayfalarında takılıyorlar sonra gelip burda atarlanıyorlar',negative
+ 'İstanbul muğlayı çok kıskanmış olmalı',negative
+ 'İstersen hesabı verebilirim sadece bugünlük koltuğuma oturabilirsin İsviçreli bilim adamlarının yaptığı araştırmalara göre bir msku mesajı insanın ömründen en az 5 yıl çalıyor',negative
+ 'İyi bayramlar',positive
+ 'İyi bayramlar bilginin sevgiyle bütünleştiği bilge üniversitenin öğrencilerine hergün bayram'positive
+ 'İyi geceler lanetlenmiş İİbfliler ve iyi geceler diğerleri',positive
+ 'just posted a photo muğla sıtkı koçman üniversitesi',positive
+ 'just posted a photo muğla üniversitesi spor bilimleri fakültesi',positive
+ 'kadıncağız adımı bilmez geç kaldığımı bilir',negative
+ 'kadınlar gününüzü kutlarız muğla sıtkı koçman üniversitesi',positive
+ 'kadınlar için daha yaşanılası bir dünya olması umuduyla kutlu olsun',positive
+ 'kadir geceniz mübarek olsun hayırlı kandiller',positive
+ 'kampüs planımızı yapan mimar bedduadan ölecek belkide ölmüştür',negative
+ 'kampüsümüzde bulunan tavukları hayvanat bahçesinde zor tutuyoruz',negative
+ 'kampüsümüz denize sıfır dersliklerimiz klimalıdır',positive
+ 'kampüsümüz okul yolu düz gider şarkısına tepki olarak kurulmuştur',negative
+ 'kampüsümüz spor severler için özel olarak tasarlanmıştır bu sayede ayrıca spor yapmanıza gerek kalmayacaktır yürümeniz yeterli',positive
+ 'kampüsümüzü keşfetmeyen kaldı mı',positive
+ 'kampüsümüz yangına karşı dayanıklıdır',positive
+ 'kampüsün a kapısını bulmaya çıkan 1 sınıflardan hâlâ haber alınamıyor',negative
+ 'kampüsünde yokuş olmayan üniversiteler bize şekil şukul yapmasın',negative
+ 'kan aldırmak mıı muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',negative
+ 'kanka banko maç varmı ya kanser eşittir msku',positive
+ 'kanka ben çok sıkıldım kalmayı düşünmüyorum d',negative
+ 'kanka tatil yapmaktan sıkılmıştır o',negative
+ 'kaptan pilotunuz konuşuyor uçuş boyunca ben ve kabin ekibi arkadaşlarım sizlere yardımcı olmaya çalışacağız',positive
+ 'kar değil yağmurdur o kar olsa yerinizde duramazdınız',negative
+ 'kardescan  muğla sıtkı koçman üniversitesi in menteşe türkiye',positive
+ 'kasımda msku vizeleri başkadır',negative
+ 'katlamalı haraç bizim üniversitemizdede geçerli 20142015 bahar yarıyılı kayıt yenileme ve ders kayıt İşlemleri',negative
+ 'katlamalı harçlara gösterilen tepkiler geri adım attırdıyök, harç ödemelerinin şubat ayı sonuna ertelendiğini duyurdu',positive
+ 'katlamalı harç uygulaması kaldırıldı fazladan yapılan ödemeler iade edilecek',positive
+ 'kayıt için gelen arkadaşlar havlunuzu plaj terliğinizi ve güneş kreminizi öğrenci işlerimizden almayı unutmayın',positive
+ 'kayıt için gelen arkadaşlar üniversite ve muğla hakkında ilk izlenimlerinizi alalım',positive
+ 'kayıt işlemlerinden sonra akyakaya gitmeyen öğrencilerimizin kayıtları tamamlanmış sayılmaz',positive
+ 'kayıtlara geldiğinizde havlunuzu plaj terliğinizi ve güneş kreminizi öğrenci işlerimizden alabilirsiniz',positive
+ 'kaza sonrası iyiyiz çok şükür muğla üniversitesi eğitim ve araştırma hastanesi',positive
+ 'kimse yokken biz vardık  kıyamet filmi yapıyolar bütün doğal afetler hep new yorku los angelesı vuruyobir kere de muğlayı İzmiri vursun',negative
+ 'kızlarımıza desteğe geldik muğla üniversitesi eski besyo spor salonu',positive
+ 'konferans gelecekte kendin olmak prof dr doğan cüceloğlu bugün saat 1400te akm a salonunda',positive
+ 'konuşmamız lazım köteklide bir apartman tüpteki gaz sızıntısı yüzünden boşaltıldı',negative
+ 'köteklideki fotokopiciler konulara öğrencilerimizden daha hakim',positive
+ 'köteklideki inekleri görüp bunları satsak iyi para eder diye düşünmediysen hayatın boyunca ticarette başarılı olamayacaksın demektir',positive'
+ 'köteklide yaşayan öğrenci temsili',positive
+ 'kötekli &gt amazon yağmur ormanları',positive
+ 'kötekli &gt sibirya',negative
+ 'kötekli &gt sıkıntı',negative'
+ 'kötekli &gt venedik',negative
+ 'köteklinin en güzel olduğu saatlerdeyiz',positive
+ 'kurban bağışlarının ilk adresi öğrenci evleri olması dileğiyle kurban bayramınız mübarek olsun',positive
+ 'kurban bayramında öğrenci evine et götürmeyen bizden değildir',negative
+ 'kurşuna gerek yok finallerimiz varya',negative
+ 'kurşuna gerek yok online olup bana yazmaman var ya kütüphanede saatlik ve günlük masa kiralama hizmetimiz başlamıştır',negative
+ 'kyk burskredi başvuru sonuçları açıklandı sonuçlara adresinden ulaşabilirsiniz ama önce siteye ulaşmanız gerekiyor',negative
+ 'kyk yurt başvuru sonuçları açıklandı adresinden ulaşabilirsiniz ama önce siteye ulaşmanız gerekiyor',negative
+ 'liseli öğrencilere kampüsümüzü gezdiren hocalar öğrencilerine nasıl bir kötülük yaptıklarının farkında değiller',negative
+ 'lütfen bizden çok selam söyleyin',positive
+ 'lys 2014 yerleştirme sonuçları açıklandı artık bizimsiniz',positive
+ 'mahallesindeki kızları bile kardeşi gibi görüp koruyan bir nesilden kız kardeşine tecavüz eden soysuzluğa',negative
+ 'mark abinin canı sıkılmış facebook hesabımızı bize sormadan sayfaya dönüştürmüş neyse buyrun beğenmeyen kalmasın',negative
+ 'marmaris saatlerdir yanıyor ve tek bir kanal haber yapmıyor acaba kimler nereye otel yapacak',negative
+ 'marmaris sabahtan beri sallanıyor şu ana kadar en büyüğü 40 şiddetinde olmak üzere 13 deprem meydana geldi',negative
+ 'mega köy köteklide adrenalin macera ve sınırsız eğlence sizi bekliyor',positive
+ 'mekanın cennet olsun kardeşim',negative
+ 'memlekete 4 bütle dönen msku öğrencisi',negative
+ 'memleketlerinde bütlere kalan öğrencilerimize nispet yapan öğrencilerimiz önümüzdeki dönem vize sınavlarına 25 puan ile başlayacak',negative
+ 'merhum kardeşimize allahtan rahmet kederli ailesine başsağlığı diliyoruz',positive
+ 'merkez üssü köyceğiz / muğla olan 41 büyüklüğünde bir deprem meydana geldi',negative
+ 'mezun öğrencilerimiz diplomasını almaya geldiklerinde öğrenci işlerimiz',positive
+ 'milyonlarca yürek tek soru bu saatte dersmi olur',negative
+ 'msku 1992 yılında dünyadaki tüm üniversitelere tepki olarak kuruldu',negative
+ 'msku eğitim fakültesi öğretim elemanı araş gör hilal küçük vefat etmiştir merhumeye allahtan rahmet sevenlerine başsağlığı diliyoruz',positive
+ 'msku gördüm aklima abim geldi mesaj ataym hemenn',positive
+ 'msku İs come back',positive
+ 'msku mesajı ile başlayan o kalp çarpıntısı &gt tüm krizler',negative
+ 'msku mesajları ile artık hiçbir öğrencimiz yalnız değil',positive
+ 'msku mesajlarıyla yine yalnız değilsiniz',positive
+ 'mskunun hunharca oynadığı trivia crack',positive
+ 'msku öğrencileri genellikle ileri görüşlüdür bknz memlekete dönüş biletini bütlerden sonraya alan öğrenciler',positive
+ 'msku öğrencileri için acıkma vakti',negative
+ 'msku öğrencileri ikiye ayrılır İİbfliler ve diğerleri',positive
+ 'msku öğrencisi temsili',positive
+ 'msku öğrencisi temsili falan değil',negative
+ 'msku öldürmez süründürür',negative
+ 'muğla büyükşehir belediyesinin yılbaşı anlayışı temsili değil',positive
+ 'muğlada dört mevsim yok tek mevsim var yağmur mevsimi',negative
+ 'muğlada ev tutacağınıza memleketinize dönün derslere uçakla gelip gidersiniz daha ucuz olur',negative
+ 'muğla da gençlerle keyifli bir buluşmasıtkı koçman üniversitesi akm b salonu mugla yolu',positive
+ 'muğlada güneş bile cool takılıyor',positive
+ 'muğlada güneş tutulması',positive
+ 'muğladan bizim üniversiteyi alın geriye ne kalır ki',negative
+ 'muğla’dan dünyaya başarılı kadın hikayeleri',positive
+ 'muğlada öğrencilerin hayata küstüren bazı şeyler 1',negative
+ 'muğlada okuyan öğrenciler hayata karşı daha güçlü olur yıllarca bir şehrin ev sahipleri tarafından çaresizce dolandırılmak kolay değil',negative
+ 'muğlada overlok makinesi değil deniz gelir ayağınıza',positive
+ 'muğlada yağmur fırtına ve 33 derece sıcaklık bir arada muğlanın iklimini çözmeye çalışan isviçreli bilim adamları intiharın eşiğinde',negative
+ 'muğla İlinin kırsal kalkınma potansiyelinin araştırılması projesi değerlendirme toplantısı',positive
+ 'muğla İlinin kırsal kalkınma potansiyelinin belirlenmesi',positive
+ 'muğlalılar simite yağmur der',negative
+ 'muğlanın efsanevi romantik yağmurları sizi bekliyor',positive
+ 'muğlanın havası eşittir ergen kız psikolojisi',negative
+ 'muğlanın havası &gt dengesizlik',negative
+ 'muğla sıtkı koçman üniversitesi',positive
+ 'muğla sıtkı koçman üniversitesi iktisadi ve İdari bilimler fakültesi',positive
+ 'muğla sıtkı koçman üniversitesi in menteşe türkiye',positive
+ 'muğla sıtkı koçman üniversitesi karya kapı nazar',positive
+ 'muğla sıtkı koçman üniversitesi meslek yüksekokulu',positive
+ 'muğla sıtkı koçman üniversitesindeki usulsüzlüğü unuttuğumuz sanılmasın süreci takip ediyoruz hak yerini bulacak',negative
+ 'muğla sıtkı koçman üniversitesinde usulsüzlük var aracılığıyla',negative
+ 'muğla sıtkı koçman üniversitesi yeni anayasa nedir ne değildir öğreniyor',positive
+ 'muğla sıtkı koçman university',positive
+ 'muğla soğukları &gt balkanlardan gelen soğuk hava dalgası  sibirya soğukları',negative
+ 'muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',positive
+ 'muğla üniversitesi enformatik binası in muğla türkiye',positive
+ 'muğla üniversitesinden de sevgiler  muğlayı özlemeyenler samimi değildir onlardan uzak durun',negative
+ 'muğla üniversitesi spor salonu in muğla',positive
+ 'muğlayı ve üniversitemizi googledan öğrenemezsiniz bu akşam kafanızdaki tüm soru işaretlerini gidereceğiz takipte kalın',positive
+ 'muhteşem ffler harika harç paraları enfes yokuşlar harika bir yıldı bunun parçası olduğunuz için teşekkürler',negative
+ 'my team muğla sıtkı koçman üniversitesi',positive
+ 'naber nasılsınız yaa bir ara 5 çayına gelin diyorum dokuz eylülde gelecek',positive
+ 'ne demek istiyorsun',negative
+ 'nedir bu ekonominin bizden çektiği',negative
+ 'ne kadar küfür etseniz az',negative
+ 'nerede okuyorsun msku aaa ne güzel anlamı ne bilginin yokuşla anlam kazandığı yağmur ile değerlendiği bilge üniversite tanesi',positive
+ 'ne sorunlu üniversitesiniz siz öyle',negative
+ 'ne yani admin hayal kuramaz mı',negative
+ 'objektifimden eğitim fakültesi',positive
+ 'ödenen paralarla her şehire değil her mahalleye üniversite kurulur',negative
+ 'öğrenciler bu ülkenin geleceğidir müşterisi değil',negative
+ 'öğrenciler gittiğinde kötekli',positive
+ 'öğrencilerim beni seviyor',positive
+ 'öğrencilerimize yönelik iş ilanlarınızteklifleriniz için mail yoluyla iletişime geçebilirsiniz mail öğrencilerimizin %93ü daha vizelere girmeden neyse finalde kurtarırım diyerek ileri görüşlülükte bir dünya markası olmayı başarmıştır',positive
+ 'öğrencilerimizin kampüse gelip eduroamı sömürerek bilimkurgu filmleri indirip kendilerini geliştirdiklerinden hiç şüphemiz yok günaydın',negative
+ 'öğrencilerimizin not ortalamasını 2 ile çarpıp 1 doların tl değerine ulaşabilirsiniz',negative
+ 'öğrencilerin hocaların egolarına kurban gittiği bilge üniversite',negative
+ 'öğrencilerin isteği yaz okulu kararında etkili olacaktır İmza kampanyaları ve dilekçelerle yaz okulu isteğinizi yönetime bildirebilirsiniz',positive
+ 'öğrenciliği bırakıp şu köteklide şemsiye satsak zengin oluruz msku öğrencileri',negative
+ 'öğrenci olma efsane ol msku',positive
+ 'öğrenciyi sömüren muğlalı ev sahipleri 3',negative
+ 'öğretim üyesi alım İlanı',positive
+ 'okuduğu bölümü profiline ingilizce olarak yazmayan öğrencilerimize diploma vermiyoruz',positive
+ 'okulu bırakıp özel üniversiteye geçerseniz daha uygun olur',negative
+ 'olamaz bunu yapamazsınız tam vize haftası oldu olmadı hocalarımızın odasına bir el bombası atar mutluluklar dilersiniz',negative
+ 'önemli kararlar tarihi gün yakında müco kahvaltı ve dahası kötekli',positive
+ 'onlar dönmeyi hiç düşünmediler çanakkale geçilmez dediler ruhları şad olsun çanakkale geçilmez',positive
+ 'onun parası yok danaya giremez',negative
+ 'ortalığa keskin bir elma kokusu yayıldı çocuklar kokuya doğru koştu son sözleri anne elma kokusu geliyor oldu',negative
+ 'otomobil üreticileri yokuş kalkış desteği sistemini bizim kampüsümüzde keşfettiler',positive
+ 'öyle bir gülüşü var ki sanırsın bizim kampüs yokuşunu teleferikle çıkmış',positive
+ 'öyle olmadığını mı düşünüyorsunn',negative
+ 'o zaman sizinkiler eşittir bizimkiler',positive
+ 'özel üniversiteler sabrımızı test etmeye kalkmasın',negative
+ 'özgecanın katledilmesine sessiz kalma yarın saat 1400te kötekli yoğurtçu parkında toplanıyoruz',positive
+ 'özledim bi ses ver komşu',positive
+ 'pay çıkaramayan bir ben varım',negative
+ 'paylaşımları yaptığımız diğer sayfalarımız',positive
+ 'pazartesi sendromu hikaye bi çay koyunda içelim',negative
+ 'pekala kötü üniversiteye iyi geceler dileyin hadii',negative
+ 'peki size whatsapptan utanan maymun gönderelim',positive
+ 'peki ya benim lalelerimi simdi kim topluyodur ah msku lalelerine bile hasretim',positive
+ 'profilinize msku yazmayı unutmayın zira sınav haftalarında yabancılık çekebilirsiniz',positive
+ 'racon kesmiyoruz kafa kesiyoruz',negative
+ 'regaib kandiliniz mübarek olsun',positive
+ 'reklam ve İletişim için diğerleri de efsane',positive
+ 'rektörümüzün 8 mart dünya kadınlar günü mesajı',positive
+ 'sabah 830a ue koyan universitenin adıdır msku',negative
+ 'sabah kalkar çalışırım diyenlerin hiçbiri çalışmadı günaydın',negative
+ 'sabah sabah sınıftaki 2 gerizekaliyi görmek de msku ya dahil mi',negative
+ 'şanlıurfa ceylanpınar da şehit olan 2 polisimize allahtan rahmet ailelerine sabır diliyoruz',negative
+ 'saygıyla anıyoruz',positive
+ 'selam gece yarısı millete %75 burs konulu smsler atmaya devam mı cici üniversite öyle bişey yok siz yapmayacaksınız',negative
+ 'selam uykusuzluk selam yorgunluk roxo',negative
+ 'sende birde seneye gör kampüsü',positive
+ 'senin kampüs benim kampüsümün önünde diz çöküp tövbe ister',negative
+ 'seni seviyorum etiketine destek verin kanser hastalığına farkındalık yaratın',positive
+ 'seni sınavsız mezun edelim sende kurtul biz de kurtulalım',negative
+ 'sessiz kalmayın muğla valiliği bina sahipleri muğlada hırsız var muğlada ev ve apart kiraları',negative
+ 'sessiz olun çocuklar uyuyor  sevgi huzur sağlık ve barış getirmesi dileğiyle tüm İslam aleminin mevlid kandili mübarek olsun',positive
+ 'severler bizi',positive
+ 'sevgililer gününe yetişmek için dersler başlıyor bahanesiyle erkenden muğla yollarına düşen herkese selam olsun vizelerde görüşeceğiz',negative
+ 'sevgili msku kızlarımız gece kıyafetiyle okula geliyosunuz diye sizi çok kınadım sorry artık gönül rahatlığıyla gelebilirsiniz',positive
+ 'sevgiliniz bile o kadar mesaj atmıyor size değerimizi bilin msku',positive
+ 'seyir tepesi marmaris',positive
+ 'sigara içenlerin derse gidemediği bayır muğla sıtkı koçman üniversitesi in menteşe türkiye',negative
+ 'sıkıntı büyük kanka',negative
+ 'sıkıntı denizinin ciğerli balıklarıyız',negative
+ 'sınavda başarılar muğla sıtkı koçman üniversitesi in menteşe türkiye',positive
+ 'sınavdan çıkan arkadaşlar lütfen kalemler bize muğla sıtkı koçman üniversitesi in menteşe türkiye',positive
+ 'sınavlarda sinyal kesici jammer sınavlarda oturma düzeninin önceden belirlenmesi elektronik yoklama burası İİbf buradan çıkış yok',negative
+ 'sınav mı oda ne muğla sıtkı koçman üniversitesi in menteşe türkiye',negative
+ 'sınav sonuçlarını ailesine hemen ve eksiksiz söyleyenler bizden değildir',positive
+ 'siz 2015e finallerimizde size',negative
+ 'siz 2016ya bütlerimizde size',negative
+ 'sizce muğladaki en sağlam taraftar grubu hangi takımın',positive
+ 'siz de destek verin öykümüzü kurtaralım dualarımız seninle öykü',positive
+ 'siz hayırdır yaa',negative
+ 'siz hoşlandığınız kişiden mesaj beklersiniz ama mesajı biz atarız cenazenize de biz geleceğiz',positive
+ 'sizi komşuluktan men ederim d',negative
+ 'sizin bilgisayar mühendislerinden birini gönderir misin benim bilgisayara format atsın bizimkiler henüz tatilden dönmedi sizin inşaat muhendislerinden bir kaç tane gönderir misin bizim kampüsün duvarını onarsınlar , bizimkiler denize gitmişte sizin oralarda havalar nasıl sizin vizeler bizim vizelerin önünde diz çöküp tövbe ister geçen yokmu',positive
+ 'sohbetin ince yerinde habersiz usulca çekilen pic muğla sıtkı koçman üniversitesi',negative
+ 'somada hayatını kaybeden vatandaşlarımızın ailelerine yardımda bulunmak isteyen öğrencilerimiz bilgi için okul yönetimlerine başvurabilirler',positive
+ 'somada kaybettiğimiz madenci babalarımızın da babalar günü kutlu olsun somada yetim kalan kardeşlerimizi unutmayalım',negative
+ 'somada meydana gelen faciada hayatını kaybeden madencilerimizi saygıyla anıyoruz',positive
+ 'sömestr tatilini mega tatil köyü köteklide geçiren kimler var',positive
+ 'son günlerde muğla ile ilgili baya twitter hesabı açılıyor hayırdır yeni mi keşfettiniz burayı',positive
+ 'son tweeti ciddiye alanların sayısı azımsanacak gibi değil üniversite olarak çok zor günler geçiriyoruz',negative
+ 'sosyal medyada en aktif üniversiteyiz saygılar',positive
+ 'sözleşme yapmayan vergi kaçıran kafasına göre zam yapan yapan kaloriferleri düzgün yakmayan ev sahiplerine dur deme zamanı geldi',negative
+ 'şu an öğrencileri dünyaya küstürmenin yeni yollarını arıyorum bir ara bakarım',negative
+ 'şu kayıt işini bu kadar büyütmeyin kampüs olduğu yerde duruyor ve hepiniz kaydolacaksınız merak etmeyin',positive
+ 'sular kesik bizim çocuklar ders çalışamıyor',negative
+ 'şüphesiz ki dünyanın en zor mesleğine sahipler haklarını ödeyemeyiz tüm annelerin günü kutlu olsun',positive
+ 'şunu anladım ki allah beni msku yla sınıyor',negative
+ 'sunum bizim işimiz muğla sıtkı koçman üniversitesi turizm',positive
+ 'tabi buyrun gelin',positive
+ 'tabii ki',positive
+ 'taçsız kral metin oktayı ölümünün 23yıldönümünde sevgi saygı ve rahmetle anıyoruz',positive
+ 'takılsın biraz hevesini alsın',positive
+ 'tanıdık geldi miiii',positive
+ 'tarlalarını bozup apartman diken öğrenciyi soyan ev sahipleri hiçbir zaman unutulmayacak',negative
+ 'taş gibi sözlük muğla sıtkı koçman üniversitesi edebiyat fakültesi',positive
+ 'tatil yaparken üniversite okuyacağınız için arkadaşlarınıza hava atabilirsiniz',positive
+ 'tebrikler',positive
+ 'tek isteğimiz karamandan iyi haberlerin gelmesi',positive
+ 'tekrar bi hakemlik sabahından günaydın iyi yarıslar olsun muğla üniversitesi atletizm sahası',positive
+ 'telafi ederiz d muğla',positive
+ 'teşekkür ederimm',positive
+ 'teşekkürler',positive
+ 'teşekkürler msku',positive
+ 'tgb muğla muğla sıtkı koçman üniversitesinde kitapçıkları dağıttı',positive
+ 'tgb muğla muğla sıtkı koçman üniversitesinde yeni anayasa nedir ne değildir  kitapçıkları dağıttı',positive
+ 'this is kötekli',positive
+ 'this is msku',positive
+ 'toplumsal cinsiyet eşitsizlikleri',negative
+ 'tüİk’in açıkladığı ‘İl güvenlik endeksi’nde muğla son sırada yer alarak türkiye’nin en güvensiz ili',negative
+ 'tülaaayyy',positive
+ 'tüm geri kalmış üniversitelerin aksine bizim üniversitemizde kızlar teklif etmektedir',positive
+ 'tüm islam aleminin bayramı mübarek olsun hayırlı bayramlar',positive
+ 'tüm İslam aleminin berat kandilini kutlar hayırlara vesile olmasını dileriz',positive
+ 'tüm İslam aleminin regaip kandili mübarek olsun vicdansız hocalar ve finaller için dua etmeye şimdiden başlayın',positive
+ 'tüm öğrencilerimize %100 burs veriyoruz hodri meydan türkiyedir galatasaray',positive
+ 'türkoloji’de ve türk dünyasında rusça',positive
+ 'tweetlerdeki etkileşime göre aktif takipçileri sık sık fav yapanları takip ediyorum genelde',positive
+ 'tweetlerimiz son 1 ayda 832 bin kez görüntülendi teşekkürler herkese bizden aa',positive
+ 'ülkede hukuk mu var ülkemize bölgemize ve tüm dünyaya barış ve huzur getirmesi dileğiyle',negative
+ 'ülkenin fişini çekmişler ülke daha da karanlık oldu',negative
+ 'ultraslan grubunun başlattığı projeye destek veriyoruz okullarda sİyah giyiyoruz',negative
+ 'üni olarak dinliyoruz',positive
+ 'üniversite derin öğrenci yüzme bilmiyor',negative
+ 'üniversitemiz bahar şenliği konser programı',positive
+ 'üniversitemize bekliyoruz muhteşem kampüsümüzde canlı yayın yapın üniversitemizin acı kaybı',positive
+ 'üniversitemizin kanayan yarası İİbfde artık elektronik yoklama var geçmiş olsun İİbf',negative
+ 'üniversitemizin sms paketi bittiği için mesaj atamıyoruz notlarınızı adresinden öğrenebilirsiniz',negative
+ 'üniversitemizin yeni kazananlara özel düzenlediği geleneksel havuz başı partisinde eğlence yine doruk seviyeye ulaştı',positive
+ 'üniversitemiz öğrencilerinden sergen yildirim kardeşimiz talihsiz bir kaza sonucu hayatını kaybetmiştir',negative
+ 'üniversitemiz öğrencilerinden serpil karakaş trafik kazası sonucu vefat etmiştir merhumeye allahtan rahmet ailesine sabır diliyoruz',negative
+ 'üniversitemiz profesörlerinden namık kemal öztürk hocamızın muhteşem yorumu',positive
+ 'üniversitenin ilk günü tadını çıkarın 6 hafta sonra vizeler kötü çarpacak',negative
+ 'üniversite tercihleri bugün başladı bizi tercih etmeden önce 2 kez daha düşünün',negative
+ 'üniversite tercihleri için bugün son gün ama yine de siz bilirsiniz',negative
+ 'üniversiteyi 4 yılda bitiren bizden değildir',negative
+ 'üniversiteyi dünyaya duyuran adminin harcandığı üniversite',negative
+ 'üniversiteyi havaya uçur çıtımız çıkarsa namerdiz üniversiteyi sürekli kampüsün çimlerinde uzanarak derssiz sınavsız hayal etmekte aşka dahil',negative
+ 'unutmadık',positive
+ 'unutursak kalbimiz kurusun',positive
+ 'üşüdüysen İİbfyi yakayım',positive
+ 'uyan',positive
+ 'uyarıyoruz biz sizin bildiğiniz üniversitelerden değiliz burası muğla burda herşey gerçek',negative
+ 'uyku insana verilmiş bir mucizeyken okullar bu mucizeyi mahvetmek için yapılmış yerlerdir',negative
+ 'uyudun mu uyudun mu uyumayanlara selam olsun',positive
+ 'uyumayın İnsanlıktan utanın uyumayın',negative
+ 'uyumayın kendinizdenvicdanınızdan insanlığınızdan utanın uyumayın',negative
+ 'uyuyun artık sonra sabah uyanamıyorsunuz',negative
+ 'uyuyun artık sonra uyanamayıp dersleri kaçırıyorsunuz bilginin sevgiyle bütünleştiği bilge üniversitemizde bilgiden mahrum kalıyorsunuz',negative
+ 'uyuyun gelmeyin',negative
+ 'uyuyun gelmeyin gelince dersten kalmayacak mısınız sanki',negative
+ 'uzuun bir aradan sonra merhaba muğla sıtkı koçman üniversitesi',positive
+ 'varsa şekliniz kötekliye bekleriz ve muğla elektriğe kavuşur',positive
+ 'vize haftası bitiyor ama finallerde yaklaşıyor bilin istedim',negative
+ 'vize haftası bütünleme tarihlerini araştıran öğrenci gerçek ileri görüşlü öğrenci',negative
+ 'vize haftası eşittir yeni küfürler üretme haftası',negative
+ 'vize haftası msku öğrencisi',positive
+ 'vizeler',positive
+ 'vizelere sadece 5 hafta kaldı bilin istedik',positive
+ 'vizeler geldi siz hâlâ buralarda takılıyorsunuz sonra vizeler girince yok msku şöyle yok msku böyle demeyin',negative
+ 'vizeler yaklaşınca msku öğrencisi',positive
+ 'vizeler yaklaşırken telefonların son durumu',positive
+ 'vizenin finalle bütünleştiği bilge üniversite msku',positive
+ 'vize sınavlarından sonra iktisadi ve idari bilimler fakültemiz zor günler geçiriyor',negative
+ 'vize sonuçlarından sonra atın beni denizlere deseniz atacağımız deniz yok msku yıkılsın yerine deniz yapılsın',negative
+ 'vize sonuçları yakın öğrenci bilgi sistemini yakın'negative
+ 'with çisem muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',positive
+ 'yağmur',positive
+ 'yağmur bir daha hiç durmayacak gibi',negative
+ 'yağmur dolu fırtına muğlaya dönerken bir daha düşünün',negative
+ 'yağmur memleketini muğla olarak güncelledi',negative
+ 'yağmur muğlayı yutmak üzere',negative
+ 'yarın akşam muğla sıtkı koçman üniversitesi ile ilgili önemli açıklamalar yapacak yeni iddialar gündeme getireceğim bilgilerinize sunarım',positive
+ 'yarından sonra filminin 2 serisi muğlada çekilmektedir',negative
+ 'yarın günlerden yokuş yarın günlerden uykusuzluk yarın günlerden bunalım yarın günlerden msku',negative
+ 'yarın katlamalı har aç için tt çalışmamız olacaktır takipte kalın',positive
+ 'yarın son ulan muğla üniversitesi spor salonu in muğla',positive
+ 'yarın tüm msku simsiyah',negative
+ 'yarın üniversite tercihleri başlıyor üniversitemiz hakkında fikir sahibi olmak isterseniz hashtagını ziyaret edebilirsiniz',positive
+ 'yarın ygsye gireceklere başarılar diliyoruz bir gün herkes mskulu olacak',positive
+ 'yarın ygsye girecek tüm öğrencilere başarılar dileriz tercihlerde bir delilik yapıp bizi yazmayın sakın',positive
+ 'yatak odasından geçmeyen işe alınmıyor',negative
+ 'yavuz selim muğla üniversitesi modern fizik laboratuvarı',positive
+ 'yaz mevsimi muğla ile olan sözleşmesini tek taraflı olarak feshetti',negative
+ 'yaz okuluna kalan kişi sayısı 1800 İİbfde kalan kişi sayısı 1200 İİbf pişmanlıktır',negative
+ 'yaz okuluna kalanları görelim',negative
+ 'yaz okulunda diğer üniversitelerden ders almak isteyenler ders alabilecek detaylı bilgi',positive
+ 'yaz okulunu haftanın mesai bitiminde duyuran kafalardaki tüm soru işaretlerini pazartesiye bırakan üniversitemizi saygıyla anabilirsiniz',negative
+ 'yaz okulu yakın bütleri yakın',negative
+ 'yazzz geldiii buralaraa muğla sıtkı koçman üniversitesi ortaca myo',positive
+ 'ydb kodlu ortak zorunlu İngilizce almanca fransızca yabancı dil derslerine ait ara sınav duyurusu',positive
+ 'yenİ kayit yaptiracak öğrencİlerİmİz İçİn bİlgİler',positive
+ 'yeni kazanan arkadaşlar hayırlı olsun bilginin sevgiyle bütünleştiği bilge üniversitemize hoş geldiniz',positive
+ 'yeni kazanan bayan öğrencilerimize yardımcı olmak isteyen 2 3 ve 4 sınıftaki erkek öğrencilerimizin yardım etme isteği takdire şayan',positive
+ 'yeni öğrencilerimiz yağmurdan dolayı isyan etmiş bu henüz fragman',negative
+ 'ygs zamanı muğla sıtkı koçman üniversitesi in menteşe türkiye',positive
+ 'yıllardır yüz binlerce öğrencinin bedduasına rağmen yıkılmadık ayaktayız',negative
+ 'yine birilerinin hayalleri yerle bir olmuş',negative
+ 'yine bir staj günü muğla üniversitesi eğitim ve araştırma hastanesi in muğla merkez',positive
+ 'yine mi',negative
+ 'yoğun talepten dolayı kontenjan arttırma çalışmalarına başladık',positive
+ 'yok baba daha açıklanmadı',negative
+ 'yokuşların ustasıyım yaz okulunun hastasıyım',positive
+ 'yol yakınken geri dönün',negative
+ 'yüksek etki değerli dergilerde yayın yapmak',positive
+ 'yüzme bilmeyenler için üniversitemizin yüzme kursları bulunmaktadır',positive
+ 'zafere giden yokuşta çekilen çile kutsaldır',negative

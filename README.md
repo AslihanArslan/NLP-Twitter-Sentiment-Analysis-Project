@@ -1,7 +1,7 @@
 # NLP-Twitter-Sentiment-Analysis-Project
 
 
-The aim of this project is to determine feelings of people about Muğla University. For a language i choose Turkish. 
+The aim of this project is to determine feelings of people about Muğla University. 
 
 ## Project Steps 
 1. Data Collection :white_check_mark:

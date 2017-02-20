@@ -9,7 +9,7 @@ The aim of this project is to determine feelings of people about Muğla Universi
 3. Categorize tweets to positive and negative :white_check_mark:
 4. Apply Naive Bayes Algorithm :white_check_mark:
 5. Testing :white_check_mark:
-6. Data Visualization with R programming :white_check_mark:
+6. Data Visualization with R programming :white_check_mark:  
 
 ## Requriments 
 1. [R program, twitteR and RCurl libraries](https://www.r-project.org/)
